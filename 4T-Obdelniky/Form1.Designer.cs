@@ -173,8 +173,9 @@
             // načístToolStripMenuItem
             // 
             this.načístToolStripMenuItem.Name = "načístToolStripMenuItem";
-            this.načístToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.načístToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.načístToolStripMenuItem.Text = "&Načíst";
+            this.načístToolStripMenuItem.Click += new System.EventHandler(this.načístToolStripMenuItem_Click);
             // 
             // uložitToolStripMenuItem
             // 
@@ -186,7 +187,7 @@
             // uložitJakoToolStripMenuItem
             // 
             this.uložitJakoToolStripMenuItem.Name = "uložitJakoToolStripMenuItem";
-            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
+            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.uložitJakoToolStripMenuItem.Text = "Uložit j&ako";
             // 
             // Form1

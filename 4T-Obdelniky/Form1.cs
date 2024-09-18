@@ -53,7 +53,13 @@ namespace _4T_Obdelniky
                 tbStranaA.Text = aktualniObdelnik.StranaA.ToString();
                 //tbStranaB.Text = (listBox1.Items[listBox1.SelectedIndex] as Obdelnik).StranaB.ToString();
                 tbStranaB.Text = aktualniObdelnik.StranaB.ToString();
+                //pri vyberu polozky zobrazte i detail o obvodu a obsahu
             }
+        }
+
+        private void načístToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            //pro nacteni pouzijte StreamReader idealne v pripojenem rezimu
         }
     }
 }
