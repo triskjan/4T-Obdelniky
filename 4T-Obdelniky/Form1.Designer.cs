@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,6 +46,7 @@
             this.načístToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uložitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.uložitJakoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.contextMenuStrip1 = new System.Windows.Forms.ContextMenuStrip(this.components);
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -86,6 +88,7 @@
             // 
             // listBox1
             // 
+            this.listBox1.ContextMenuStrip = this.contextMenuStrip1;
             this.listBox1.FormattingEnabled = true;
             this.listBox1.Location = new System.Drawing.Point(12, 27);
             this.listBox1.Name = "listBox1";
@@ -173,22 +176,27 @@
             // načístToolStripMenuItem
             // 
             this.načístToolStripMenuItem.Name = "načístToolStripMenuItem";
-            this.načístToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.načístToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.načístToolStripMenuItem.Text = "&Načíst";
             this.načístToolStripMenuItem.Click += new System.EventHandler(this.načístToolStripMenuItem_Click);
             // 
             // uložitToolStripMenuItem
             // 
             this.uložitToolStripMenuItem.Name = "uložitToolStripMenuItem";
-            this.uložitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uložitToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.uložitToolStripMenuItem.Text = "&Uložit";
             this.uložitToolStripMenuItem.Click += new System.EventHandler(this.uložitToolStripMenuItem_Click);
             // 
             // uložitJakoToolStripMenuItem
             // 
             this.uložitJakoToolStripMenuItem.Name = "uložitJakoToolStripMenuItem";
-            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.uložitJakoToolStripMenuItem.Size = new System.Drawing.Size(129, 22);
             this.uložitJakoToolStripMenuItem.Text = "Uložit j&ako";
+            // 
+            // contextMenuStrip1
+            // 
+            this.contextMenuStrip1.Name = "contextMenuStrip1";
+            this.contextMenuStrip1.Size = new System.Drawing.Size(61, 4);
             // 
             // Form1
             // 
@@ -236,6 +244,7 @@
         private System.Windows.Forms.ToolStripMenuItem načístToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uložitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem uložitJakoToolStripMenuItem;
+        private System.Windows.Forms.ContextMenuStrip contextMenuStrip1;
     }
 }
 
