@@ -19,6 +19,11 @@ namespace _4T_Obdelniky
             StranaA = stranaA;
             StranaB = stranaB;
         }
+        public Obdelnik(string CSVLine)
+        {
+            StranaA = Convert.ToInt32(CSVLine.Split(';')[0]);
+            StranaB = Convert.ToInt32(CSVLine.Split(';')[1]);
+        }
         public Obdelnik(string stranaA, string stranaB)
         {
             StranaA = Convert.ToInt32(stranaA);

@@ -54,12 +54,32 @@ namespace _4T_Obdelniky
                 //tbStranaB.Text = (listBox1.Items[listBox1.SelectedIndex] as Obdelnik).StranaB.ToString();
                 tbStranaB.Text = aktualniObdelnik.StranaB.ToString();
                 //pri vyberu polozky zobrazte i detail o obvodu a obsahu
+                tbObvod.Text = aktualniObdelnik.Obvod.ToString();
+                tbObsah.Text = aktualniObdelnik.Obsah.ToString();
             }
         }
 
         private void načístToolStripMenuItem_Click(object sender, EventArgs e)
         {
             //pro nacteni pouzijte StreamReader idealne v pripojenem rezimu
+            using (StreamReader streamReader = new StreamReader("obdelniky.csv",encoding: Encoding.UTF8))
+            {
+                streamReader.ReadLine();
+                while (!streamReader.EndOfStream)
+                    listBox1.Items.Add(new Obdelnik(streamReader.ReadLine()));
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (JeVybranaPolozkaVSeznamu)
+            {
+                aktualniObdelnik.StranaA = Convert.ToInt32(tbStranaA.Text);
+                aktualniObdelnik.StranaB = Convert.ToInt32(tbStranaB.Text);
+                listBox1.Items[listBox1.SelectedIndex] = listBox1.Items[listBox1.SelectedIndex];
+
+
+            }
         }
     }
 }
