@@ -77,9 +77,16 @@ namespace _4T_Obdelniky
                 aktualniObdelnik.StranaA = Convert.ToInt32(tbStranaA.Text);
                 aktualniObdelnik.StranaB = Convert.ToInt32(tbStranaB.Text);
                 listBox1.Items[listBox1.SelectedIndex] = listBox1.Items[listBox1.SelectedIndex];
-
-
             }
+            Obdelnik o = new Obdelnik(4, 20);
+            Obdelnik o2 = new Trojuhelnik(4, 5, 6);
+            Trojuhelnik t = new Trojuhelnik(4, 5, 6);
+            List<Obdelnik> seznam = new List<Obdelnik>();
+            seznam.Add(o);
+            seznam.Add(o2);
+            seznam.Add(t);
+
+            
         }
     }
 }
