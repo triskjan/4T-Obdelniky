@@ -85,8 +85,18 @@ namespace _4T_Obdelniky
             seznam.Add(o);
             seznam.Add(o2);
             seznam.Add(t);
+        }
 
-            
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Obdelnik o1 = new Obdelnik(4, 5); //18
+            Trojuhelnik t1 = new Trojuhelnik(4, 5, 6);//15
+            Obdelnik t2 = new Trojuhelnik(4, 5, 6); //15
+            string vystup = "o1: " + o1.Obvod.ToString() + Environment.NewLine;
+            vystup += "t1: " + t1.Obvod.ToString() + Environment.NewLine;
+            //if(t2 is  Trojuhelnik)
+            vystup+= "t2: " + t2.Obvod.ToString() + Environment.NewLine;
+            MessageBox.Show(vystup);
         }
     }
 }
